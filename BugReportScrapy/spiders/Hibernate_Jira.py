@@ -23,7 +23,7 @@ hibernate_urls = []
 for i in range(0, 65):
     payload = json.dumps({
         "jql": "project = HHH & status in (Resolved, Closed) & issuetype = Bug",
-        "startAt": 99,
+        "startAt": i * 100,
         "maxResults": 100,
         "fields": [
             "summary",
@@ -42,7 +42,7 @@ for i in range(0, 65):
                 'key') + ".xml")
 
 
-class Apache_Bugzilla(scrapy.Spider):
+class Hibernate_Jira(scrapy.Spider):
     name = "Hibernate_Jira"
     start_urls = hibernate_urls
 
