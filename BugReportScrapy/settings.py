@@ -88,7 +88,7 @@ ROBOTSTXT_OBEY = False
 # HTTPCACHE_IGNORE_HTTP_CODES = []
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 LOG_LEVEL = 'DEBUG'
-DOWNLOAD_DELAY = 2
+DOWNLOAD_DELAY = 3
 # # 设置IP池和用户代理
 # # 禁止本地Cookie
 # COOKIES_ENABLED = False
