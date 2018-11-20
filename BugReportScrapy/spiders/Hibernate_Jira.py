@@ -20,7 +20,7 @@ headers = {
     "Bearer": "<access_token>"
 }
 hibernate_urls = []
-for i in range(0, 65):
+for i in range(65, 66):
     payload = json.dumps({
         "jql": "project = HHH & status in (Resolved, Closed) & issuetype = Bug",
         "startAt": i * 100,
