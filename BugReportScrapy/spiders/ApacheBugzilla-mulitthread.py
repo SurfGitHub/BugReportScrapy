@@ -9,11 +9,11 @@ mongodb_client = pymongo.MongoClient("mongodb://47.101.47.191:27017/")
 db_auth = mongodb_client.admin
 db_auth.authenticate("root", "nju2019")
 mongodb = mongodb_client["bug_report"]
-mongodb_collection = mongodb["tomcat5"]
+mongodb_collection = mongodb["tomcat4"]
 logger = logging.getLogger()
 urls = []
 csv_file = csv.reader(
-    open('C:\\Users\\Administrator\\Documents\\Document\\Master Document\\研毕设\\数据爬取\\xml\\tomcat5.csv', 'r',
+    open('C:\\Users\\Administrator\\Documents\\Document\\研毕设\\数据爬取\\xml\\tomcat4-retry.csv', 'r',
          encoding='UTF-8'))
 for bug_report in csv_file:
     if (bug_report[0] == 'Bug ID'):
